@@ -14,7 +14,7 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "House",
+  title: "Holt",
   description:
     "House rules for the agent. Ideate, design, and develop on a locked stack.",
 }

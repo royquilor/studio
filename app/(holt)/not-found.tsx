@@ -9,7 +9,7 @@ import {
   EmptyTitle,
 } from "@/components/ui/empty"
 
-export default function HouseNotFound() {
+export default function HoltNotFound() {
   return (
     <Empty className="flex-1">
       <EmptyHeader>
@@ -20,7 +20,7 @@ export default function HouseNotFound() {
       </EmptyHeader>
       <EmptyContent>
         <Link href="/" className={buttonVariants({ variant: "outline" })}>
-          Back to House
+          Back to Holt
         </Link>
       </EmptyContent>
     </Empty>

@@ -6,7 +6,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-export default function HouseLayout({
+export default function HoltLayout({
   children,
 }: {
   children: React.ReactNode

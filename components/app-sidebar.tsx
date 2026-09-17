@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/sidebar"
 
 /**
- * Grouped House nav. Harness is first so the workshop is always the top of the map.
+ * Grouped Holt nav. Harness is first so the workshop is always the top of the map.
  */
 export function AppSidebar() {
   const pathname = usePathname()
@@ -31,9 +31,9 @@ export function AppSidebar() {
             <SidebarMenuButton
               render={<Link href="/" />}
               isActive={pathname === "/"}
-              tooltip="House"
+              tooltip="Holt"
             >
-              <span className="font-heading font-medium">House</span>
+              <span className="font-heading font-medium">Holt</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
