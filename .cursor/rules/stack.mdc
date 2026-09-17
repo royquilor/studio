@@ -1,0 +1,14 @@
+---
+description: Locked studio stack. Do not freelance vendors.
+alwaysApply: true
+---
+
+# Stack
+
+Allowlist: Next.js App Router, shadcn/ui, Tailwind, Vercel.
+
+Documented but not installed until a feature needs them: Convex, Clerk, Resend, Polar.
+
+Never add MUI, Chakra, Vite-for-the-product, Stripe, or a second UI kit.
+
+New vendor requires a human yes.
