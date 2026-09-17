@@ -37,7 +37,7 @@ export function TopicView({
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink render={<Link href="/" />}>Studio</BreadcrumbLink>
+            <BreadcrumbLink render={<Link href="/" />}>House</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

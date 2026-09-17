@@ -1,6 +1,6 @@
 # design.md
 
-House taste for Studio. Read this before changing UI.
+House taste. Read this before changing UI.
 
 ## Type
 

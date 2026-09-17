@@ -6,7 +6,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-export default function StudioLayout({
+export default function HouseLayout({
   children,
 }: {
   children: React.ReactNode

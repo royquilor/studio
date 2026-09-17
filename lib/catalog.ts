@@ -23,7 +23,7 @@ import {
 } from "lucide-react"
 
 /**
- * Sidebar map for the studio handbook.
+ * Sidebar map for the House handbook.
  * Harness sits at the top so every run starts with the workshop, not a vendor.
  */
 export type GroupId = "harness" | "ideate" | "design" | "develop"

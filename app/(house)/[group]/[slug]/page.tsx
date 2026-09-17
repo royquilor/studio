@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: TopicParams }) {
   const item = findItem(group, slug)
 
   return {
-    title: item ? `${item.title} · Studio` : "Studio",
+    title: item ? `${item.title} · House` : "House",
     description: item?.summary,
   }
 }

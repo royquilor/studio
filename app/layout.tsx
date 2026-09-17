@@ -14,9 +14,9 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Studio",
+  title: "House",
   description:
-    "A designer harness for ideating, designing, and developing on a locked stack.",
+    "House rules for the agent. Ideate, design, and develop on a locked stack.",
 }
 
 export default function RootLayout({

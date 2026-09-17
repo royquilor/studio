@@ -21,7 +21,7 @@ export default function NotFound() {
       </EmptyHeader>
       <EmptyContent>
         <Link href="/" className={buttonVariants()}>
-          Back to the harness
+          Back to House
         </Link>
       </EmptyContent>
     </Empty>
