@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import { catalog } from "@/lib/catalog"
+import { HoltWordmark } from "@/components/holt-wordmark"
 import {
   Sidebar,
   SidebarContent,
@@ -19,33 +20,31 @@ import {
 
 /**
  * Grouped Holt nav. Harness is first so the workshop is always the top of the map.
+ * Wordmark, group gap, and Departure Mono labels match the Figma sidebar.
  */
 export function AppSidebar() {
   const pathname = usePathname()
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton
-              render={<Link href="/" />}
-              isActive={pathname === "/"}
-              tooltip="Holt"
-            >
-              <span className="font-heading font-medium">Holt</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+      <SidebarHeader className="h-12 justify-center px-4 py-1">
+        <Link
+          href="/"
+          className="flex items-center text-sidebar-foreground"
+          aria-label="Holt"
+        >
+          <HoltWordmark />
+        </Link>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="gap-6">
         {catalog.map((group) => (
-          <SidebarGroup key={group.id}>
-            <SidebarGroupLabel>{group.label}</SidebarGroupLabel>
+          <SidebarGroup key={group.id} className="gap-3">
+            <SidebarGroupLabel className="font-departure h-auto font-normal uppercase tracking-wide">
+              {group.label}
+            </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
                 {group.items.map((item) => {
-                  const Icon = item.icon
                   const isActive = pathname === item.href
 
                   return (
@@ -55,7 +54,6 @@ export function AppSidebar() {
                         isActive={isActive}
                         tooltip={item.title}
                       >
-                        <Icon />
                         <span>{item.title}</span>
                       </SidebarMenuButton>
                     </SidebarMenuItem>

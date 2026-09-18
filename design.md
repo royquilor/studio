@@ -5,6 +5,7 @@ House taste. Read this before changing UI.
 ## Type
 
 - Sans: Geist (`--font-sans`). Mono: Geist Mono for code only.
+- Sidebar group labels only: Departure Mono (`font-departure`), uppercase. Do not use it for body or headings.
 - Page title: `text-3xl font-medium tracking-tight`.
 - Body: `text-base` or `text-sm`, `leading-relaxed`, `text-pretty`.
 - Headings use `text-balance`. Do not introduce a display font.
